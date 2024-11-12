@@ -1,15 +1,16 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Emp from './Employee';
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <div className="bg-blue-500 text-white p-4 rounded-lg">
-      <h1 className="text-2xl font-bold">Hello, Tailwind CSS!</h1>
-      <p>This is a React component styled with Tailwind.</p>
-    </div>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/emp" element={<Emp />} />
+      </Routes>
+      
     </div>
   );
 }
