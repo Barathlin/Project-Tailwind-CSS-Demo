@@ -28,7 +28,7 @@ const Emp = () => {
           </span>
         </button>
       </div>
-      <div className="container flex justify-center items-center p-4 w-full">
+      <div className="flex justify-center items-center p-4 w-full"> 
         <div className="flex flex-wrap items-center w-2/8 gap-6 justify-around">
           {data.map((item, index) => (
             <Card key={index} employee={item} />

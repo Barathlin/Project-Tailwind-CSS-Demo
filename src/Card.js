@@ -3,7 +3,7 @@ import React from "react";
 
 const Card = ({ employee }) => {
   return (
-    <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl w-full">
+    <div className="border border-gray-300 max-w-xs bg-white rounded-lg  overflow-hidden hover:shadow-2xl w-full">
       <div className="bg-blue-500 text-white text-center font-semibold py-2">
         {employee.Role}
       </div>
