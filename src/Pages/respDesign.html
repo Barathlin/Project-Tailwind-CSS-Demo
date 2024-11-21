@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.2" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
         <title>
             Responsive Design
         </title>
@@ -12,16 +12,37 @@
             body{
                 background-color: azure;
             }
-            /* p{
-              font-size: larger;  
-            } */
+            button {
+                border: 0;
+                padding: 9px;
+            }
+            .color-manage{
+                background-color: aquamarine;
+            }
+            .wrapper{
+                width: 100%;
+            }
+            .paddinger{
+                padding: 10px;
+            }
+            .framer{
+                height: 100%;
+                width: 50%;
+                background-color:blanchedalmond;
+            }
         </style>
+                <script src="./scriptingfile.js"></script>
+
     </head>
     <body>
+    <center class="wrapper">
+         <div class="color-manage">Aim to center</div>
+      <div class="framer">
         <div class="d-flex flex-column align-items-center justify-content-center">
             <div class=""><h2>Mail Tittle</h2></div>
-            <div><button type="button"  onclick="rome()" class="btn btn-success">Default</button></div>
+            <div class="paddinger"><button type="button"  onclick="rome()" class="btn btn-success">Default</button></div>
         </div>
-        <script src="./scriptingfile.js"></script>
+      </div>
+    </center>
     </body>
 </html>
